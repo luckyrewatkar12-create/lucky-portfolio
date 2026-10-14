@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Rewatkar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <span>L</span><span>R</span>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">LR</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">&#128075; Hello, World! I am</p>
+        <h1 class="hero-name">Lucky <span class="gradient-text">Rewatkar</span></h1>
+        <div class="hero-typed-wrapper">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          Passionate B.Tech IT student building the future through cloud, code and community.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+          <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/luckyrewatkar12-create" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/lucky-rewatkar-762742384/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:luckyrewatkar12@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://tryhackme.com" target="_blank" title="TryHackMe"><i class="fas fa-shield-halved"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-ring">
+          <div class="profile-inner">
+            <img src="profile.jpg" alt="Lucky Rewatkar" class="profile-pic"
+                 onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Lucky+Rewatkar&size=300&background=6c63ff&color=fff&bold=true&font-size=0.33'">
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-aws"></i> AWS Builder</div>
+        <div class="floating-badge badge-2"><i class="fas fa-shield-halved"></i> TryHackMe</div>
+        <div class="floating-badge badge-3"><i class="fab fa-java"></i> Java Dev</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-tag">Get to know me</span>
+      <h2>About <span class="gradient-text">Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img-box">
+          <img src="profile.jpg" alt="Lucky Rewatkar"
+               onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Lucky+Rewatkar&size=400&background=6c63ff&color=fff&bold=true&font-size=0.33'">
+          <div class="about-img-deco"></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box"><span class="stat-num" data-target="2">0</span>+<span class="stat-label">Years Learning</span></div>
+          <div class="stat-box"><span class="stat-num" data-target="5">0</span>+<span class="stat-label">Skills</span></div>
+          <div class="stat-box"><span class="stat-num" data-target="3">0</span>+<span class="stat-label">Projects</span></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>B.Tech IT Student &amp; AWS Student Builder</h3>
+        <p>I am a 2nd-year Information Technology student at <strong>Maharashtra State Skills University (RTMSSU)</strong>, driven by curiosity and a passion for technology. My core interests span <strong>cloud computing</strong>, <strong>cybersecurity</strong>, and <strong>open-source collaboration</strong>.</p>
+        <p>As an active volunteer with the <strong>AWS Student Builder Group</strong>, I conduct workshops, mentor juniors, and help build a thriving tech community on campus.</p>
+        <div class="about-info-grid">
+          <div class="info-item"><i class="fas fa-graduation-cap"></i><div><span>Degree</span><strong>B.Tech – Information Technology</strong></div></div>
+          <div class="info-item"><i class="fas fa-university"></i><div><span>University</span><strong>RTMSSU (Maharashtra)</strong></div></div>
+          <div class="info-item"><i class="fas fa-calendar-alt"></i><div><span>Year</span><strong>2nd Year (2024–2028)</strong></div></div>
+          <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span>Location</span><strong>Maharashtra, India</strong></div></div>
+        </div>
+        <a href="#contact" class="btn btn-primary mt-1"><i class="fas fa-handshake"></i> Let us Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="dark-bg">
+    <div class="section-header">
+      <span class="section-tag">What I know</span>
+      <h2>My <span class="gradient-text">Skills</span></h2>
+    </div>
+    <div class="skills-tabs">
+      <button class="tab-btn active" data-tab="technical">Technical</button>
+      <button class="tab-btn" data-tab="tools">Tools &amp; Platforms</button>
+      <button class="tab-btn" data-tab="soft">Soft Skills</button>
+    </div>
+    <div class="tab-content active" id="technical">
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-java"></i></div><h4>Java</h4><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div><span>Beginner–Intermediate</span></div>
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>C++</h4><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div><span>Advanced Concepts in Progress</span></div>
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML / CSS</h4><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div><span>Intermediate</span></div>
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-terminal"></i></div><h4>Linux &amp; OS</h4><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div><span>Intermediate</span></div>
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-shield-halved"></i></div><h4>Cybersecurity</h4><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div><span>Learning (TryHackMe)</span></div>
+        <div class="skill-card reveal"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>SQL Basics</h4><div class="skill-bar"><div class="skill-fill" data-width="45"></div></div><span>Beginner</span></div>
+      </div>
+    </div>
+    <div class="tab-content" id="tools">
+      <div class="tools-grid">
+        <div class="tool-chip reveal"><i class="fab fa-aws"></i> AWS Cloud</div>
+        <div class="tool-chip reveal"><i class="fab fa-github"></i> GitHub</div>
+        <div class="tool-chip reveal"><i class="fab fa-git-alt"></i> Git</div>
+        <div class="tool-chip reveal"><i class="fas fa-file-excel"></i> MS Excel (Expert)</div>
+        <div class="tool-chip reveal"><i class="fas fa-file-word"></i> MS Word (Expert)</div>
+        <div class="tool-chip reveal"><i class="fas fa-file-powerpoint"></i> PowerPoint (Expert)</div>
+        <div class="tool-chip reveal"><i class="fab fa-linux"></i> Linux (Ubuntu)</div>
+        <div class="tool-chip reveal"><i class="fas fa-bug"></i> TryHackMe</div>
+        <div class="tool-chip reveal"><i class="fas fa-code"></i> VS Code</div>
+      </div>
+    </div>
+    <div class="tab-content" id="soft">
+      <div class="soft-grid">
+        <div class="soft-card reveal"><i class="fas fa-people-group"></i><h4>Team Leadership</h4><p>Led workshops and mentored peers in the AWS Student Builder Group.</p></div>
+        <div class="soft-card reveal"><i class="fas fa-comments"></i><h4>Communication</h4><p>Clear communicator, adept at presenting technical concepts to non-technical audiences.</p></div>
+        <div class="soft-card reveal"><i class="fas fa-lightbulb"></i><h4>Problem Solving</h4><p>Analytical mindset with a passion for breaking down complex challenges.</p></div>
+        <div class="soft-card reveal"><i class="fas fa-book-open"></i><h4>Continuous Learning</h4><p>Driven to upskill daily through labs, courses, and community events.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">What I have built</span>
+      <h2>My <span class="gradient-text">Projects</span></h2>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="cloud">Cloud</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal" data-category="web">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#6c63ff,#3a3dc4)">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-overlay">
+            <a href="https://github.com/luckyrewatkar12-create" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></div>
+          <h3>Resume Portfolio Website</h3>
+          <p>Personal portfolio hosted on GitHub Pages showcasing academic journey and projects.</p>
+        </div>
+      </div>
+      <div class="project-card reveal" data-category="cloud">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#ff9900,#c76b00)">
+            <i class="fab fa-aws"></i>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn"><i class="fas fa-file-alt"></i> Details</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>AWS</span><span>Cloud</span><span>Workshop</span></div>
+          <h3>AWS Cloud Workshop</h3>
+          <p>Designed and conducted AWS sessions covering IAM, S3, EC2 for junior students.</p>
+        </div>
+      </div>
+      <div class="project-card reveal" data-category="security">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#e94560)">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="project-overlay">
+            <a href="https://tryhackme.com" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i> TryHackMe</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Cybersecurity</span><span>CTF</span><span>Linux</span></div>
+          <h3>Cybersecurity Lab Practice</h3>
+          <p>CTF challenges covering network security, privilege escalation, and web vulnerabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="dark-bg">
+    <div class="section-header">
+      <span class="section-tag">Achievements</span>
+      <h2>Certifications &amp; <span class="gradient-text">Awards</span></h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon" style="background:linear-gradient(135deg,#ff9900,#f4c542)"><i class="fab fa-aws"></i></div>
+        <div class="cert-body"><h4>AWS Student Builder Volunteer</h4><p>Active contributor organizing events and workshops at RTMSSU.</p><span class="cert-year">2024 – Present</span></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon" style="background:linear-gradient(135deg,#1a1a2e,#e94560)"><i class="fas fa-shield-halved"></i></div>
+        <div class="cert-body"><h4>TryHackMe – Cybersecurity Learner</h4><p>Completed multiple paths in Ethical Hacking, Linux Fundamentals, and Web Security.</p><span class="cert-year">2024 – Present</span></div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon" style="background:linear-gradient(135deg,#0077b5,#00a0dc)"><i class="fas fa-file-excel"></i></div>
+        <div class="cert-body"><h4>Microsoft Office – Expert Level</h4><p>Expert-level proficiency in Excel, Word, and PowerPoint.</p><span class="cert-year">2023</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="section-header">
+      <span class="section-tag">My Journey</span>
+      <h2>Academic <span class="gradient-text">Timeline</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item left reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content"><span class="tl-date">2024 – Present</span><h4>B.Tech – Information Technology</h4><p>RTMSSU (Maharashtra). Focusing on cloud, security and development.</p></div>
+      </div>
+      <div class="timeline-item right reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content"><span class="tl-date">2024</span><h4>AWS Student Builder Volunteer</h4><p>Joined the AWS Student Builder Group – mentoring peers and conducting cloud workshops.</p></div>
+      </div>
+      <div class="timeline-item left reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content"><span class="tl-date">2024</span><h4>Started TryHackMe Journey</h4><p>Began hands-on cybersecurity training via CTF challenges and guided learning paths.</p></div>
+      </div>
+      <div class="timeline-item right reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content"><span class="tl-date">2023</span><h4>HSC (12th Grade) Completed</h4><p>Cleared Higher Secondary Certificate examination from Maharashtra State Board.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="dark-bg">
+    <div class="section-header">
+      <span class="section-tag">Let us connect</span>
+      <h2>Get In <span class="gradient-text">Touch</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let us work together</h3>
+        <p>I am always open to collaborations, internship opportunities, mentoring sessions, or just a friendly tech chat. Drop me a message!</p>
+        <div class="contact-links">
+          <a href="mailto:luckyrewatkar12@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><span>Email</span><strong>luckyrewatkar12@gmail.com</strong></div>
+          </a>
+          <a href="https://github.com/luckyrewatkar12-create" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div><span>GitHub</span><strong>luckyrewatkar12-create</strong></div>
+          </a>
+          <a href="https://www.linkedin.com/in/lucky-rewatkar-762742384/" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div><span>LinkedIn</span><strong>lucky-rewatkar</strong></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Internship Opportunity" required>
+          <span class="form-error" id="subject-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Hi Lucky, I would love to connect..." required></textarea>
+          <span class="form-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div id="form-success" class="form-success" style="display:none">
+          <i class="fas fa-circle-check"></i> Message sent! I will get back to you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">LR</div>
+      <p>Designed &amp; Built by <strong>Lucky Rewatkar</strong></p>
+      <p class="footer-sub">B.Tech IT Student | AWS Student Builder | Cybersecurity Enthusiast</p>
+      <div class="footer-socials">
+        <a href="https://github.com/luckyrewatkar12-create" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lucky-rewatkar-762742384/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:luckyrewatkar12@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">2026 Lucky Rewatkar Made with love in India</p>
+    </div>
+    <a href="#home" class="back-to-top" id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
