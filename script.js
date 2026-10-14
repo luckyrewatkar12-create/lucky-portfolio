@@ -1,4 +1,4 @@
-﻿// ===== PRELOADER =====
+// ===== PRELOADER =====
 window.addEventListener("load", () => {
   const pre = document.getElementById("preloader");
   setTimeout(() => pre.classList.add("hidden"), 800);
@@ -75,12 +75,13 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ===== DARK MODE =====
+// ===== DARK MODE (default: dark) =====
 const themeBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
 const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
+// Default is dark unless user explicitly chose light
+if (savedTheme !== "light") {
   body.classList.add("dark-mode");
   if (themeBtn) themeBtn.querySelector("i").className = "fas fa-sun";
 }
